@@ -8,6 +8,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: hsl(270, 20%, 96%);
+    background-image: url(./images/Union.svg), url(./images/bg-grey1.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top , bottom right;
+    background-position-x: -450px, 250px;
+    background-position-y: -700px, 400px;
+
+
+
 }
 
 .tel {
@@ -15,11 +23,12 @@ body {
     height: fit-content;
     font-size: 0.55rem;
     margin: 1rem auto;
-    border: 0.75rem solid white;
+    border: 0.5rem solid white;
     border-radius: 1.5rem;
     background-color: white;
     display: flex;
     flex-direction: column;
+    box-shadow: 10px 20px 10px rgb(233, 230, 234);
 }
 
 /* =============
@@ -90,7 +99,7 @@ body {
 .conv {
     display: flex;
     flex-direction: column;
-    background-color: hsl(270, 20%, 96%);
+    background-color: hsl(270, 12%, 97%);
     flex-grow: 1;
     padding: 0.5rem;
     border-bottom-left-radius: 1rem;
@@ -100,7 +109,7 @@ body {
 .recive-msg {
     display: grid;
     gap: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0.1rem;
 }
 
 .recive {
@@ -140,6 +149,13 @@ body {
     border-bottom-right-radius: 0.25rem;
     width: 65%;
     box-shadow: 0 5px 10px hsl(275, 26%, 91%);
+}
+
+.sent,
+.recive
+ {
+    width: fit-content;
+    max-width: 65%;
 }
 
 
@@ -213,9 +229,10 @@ input[type="radio"]:checked + .checkmark {
   ============   */
 .type-div {
     display: grid;
-    height: 1.75rem;
+    height:2.25rem;
     overflow: hidden;
-    border-radius: 1rem;
+    border-radius: 2rem;
+    margin-top: 1em;
 }
 
 .type-bar {
@@ -235,7 +252,7 @@ input[type="radio"]:checked + .checkmark {
 }
 
 button {
-    width: 2rem;
+    width: 2.25rem;
     border: none;
     background-color: #fff;
     margin: 0;
@@ -244,4 +261,67 @@ button {
 
 button:hover {
     opacity: 0.8;
+}
+
+.about {
+    text-align: center ;
+    max-width: 500px;
+    margin: 3em auto;
+}
+
+.about h1 {
+    margin-bottom: 0.75em;
+    opacity: 0.8;
+}
+
+.describe {
+    opacity: 0.5;
+}
+
+
+@media (min-width:900px) {
+    main {
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .tel-desktop,
+    .about-desktop {
+        flex: 1 1 0;
+    }
+
+
+    body {
+        background-image: url(./images/Union.svg), url(./images/bg-grey1.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left top , bottom right;
+        background-position-x: -280px, 1000px;
+        background-position-y: -650px, 100px;
+      
+       
+        
+    }
+    .tel {
+        box-shadow: 10px 10px 30px rgb(223, 222, 224);
+    }
+   
+
+    .describe {
+        max-width: 400px;
+    }
+    .about h1 {
+        align-self: flex-end;
+    }
+
+    .about-desktop {
+        display: flex;
+    }
+
+    .about {
+        display: grid;
+        text-align: left;
+        margin: 0;
+    }
+
 }
