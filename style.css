@@ -280,11 +280,7 @@ button:hover {
 
 
 @media (min-width:900px) {
-    main {
-        display: flex;
-        width: 75%;
-        margin: 0 auto;
-    }
+    
 
     .tel-desktop,
     .about-desktop {
@@ -298,9 +294,16 @@ button:hover {
         background-position: left top , bottom right;
         background-position-x: -280px, 1000px;
         background-position-y: -650px, 100px;
-      
-       
+        display: flex;
+        align-items: center;
+       padding: 0;
         
+    }
+
+    main {
+        display: flex;
+        width: 75%;
+        margin: auto auto;
     }
     .tel {
         box-shadow: 10px 10px 30px rgb(223, 222, 224);
